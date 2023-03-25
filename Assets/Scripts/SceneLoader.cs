@@ -13,6 +13,6 @@ public class SceneLoader : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit(0);
+        Application.Quit();
     }
 }
