@@ -537,6 +537,10 @@ PrefabInstance:
       propertyPath: ammoAmount
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 1545579686617977777, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: damage
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1856650021424945816, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -569,6 +573,10 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1626742512}
+    - target: {fileID: 7762867304342566566, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: currentWeapon
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3006,7 +3014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsCamera: {fileID: 2117630425}
   zoomedOutFOV: 60
-  zoomedInFOV: 50
+  zoomedInFOV: 40
 --- !u!1001 &493628118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3087,7 +3095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsCamera: {fileID: 2117630425}
   zoomedOutFOV: 60
-  zoomedInFOV: 40
+  zoomedInFOV: 30
 --- !u!1001 &508149035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15069,7 +15077,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490952087143918116, guid: bfe7f853397585c4581ad95c99171e12, type: 3}
       propertyPath: hitPoints
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4359971273060018898, guid: bfe7f853397585c4581ad95c99171e12, type: 3}
       propertyPath: m_RootOrder
