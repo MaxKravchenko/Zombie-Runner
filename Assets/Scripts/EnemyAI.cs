@@ -13,15 +13,23 @@ public class EnemyAI : MonoBehaviour
     Animator animator;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+    EnemyHealth health;
     
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        health = GetComponent<EnemyHealth>();
     }
 
     void Update()
     {
+        if (health.IsDead())
+        {
+            enabled = false;
+            navMeshAgent.enabled = false;
+        }
+        
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if(isProvoked)
         {
@@ -56,7 +64,11 @@ public class EnemyAI : MonoBehaviour
     {
         animator.SetBool("attack", false);
         animator.SetTrigger("move");
-        navMeshAgent.SetDestination(target.position);
+        if(navMeshAgent.enabled == true)
+        {
+            navMeshAgent.SetDestination(target.position);
+        }
+        
     }
 
     private void AttackTarget()
