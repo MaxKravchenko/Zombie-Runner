@@ -21,5 +21,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (target == null) return;
         target.DecreasePlayerHealth(damage);
+        target.GetComponent<DisplayDamage>().ShowDamageImpact();
     }
 }
